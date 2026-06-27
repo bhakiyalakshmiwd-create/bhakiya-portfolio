@@ -15,3 +15,56 @@ body {
   --mono: 'Fira Code', monospace;
 }
 html { scroll-behavior: smooth; }
+
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+/* ── Navbar ── */
+.nav-links-desktop { display: flex; }
+.nav-links-mobile { display: none; }
+
+/* ── Hero ── */
+.hero-grid {
+  max-width: 1050px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem; align-items: center;
+}
+
+/* ── Skills ── */
+.skills-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+}
+
+/* ── Projects ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+/* ── Contact ── */
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 2rem; align-items: center;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .nav-links-desktop { display: none; }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-grid h1 { font-size: 2rem !important; }
+
+  .skills-grid { grid-template-columns: 1fr; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .sec { padding: 3rem 1.2rem !important; }
+}
