@@ -69,8 +69,8 @@ export default function Hero() {
               View Projects ↓
             </a>
             <a
-              href="/BhakiyaLakshmi_Resume_.pdf"
-              download="BhakiyaLakshmi_Resume_.pdf"
+              href="/BhakiyaLakshmi_Resume.pdf"
+              download="BhakiyaLakshmi_Resume.pdf"
               style={{
                 background: 'transparent', color: '#e8e8f0',
                 border: '1px solid #1c1c2e', padding: '0.7rem 1.6rem',
